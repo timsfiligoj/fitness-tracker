@@ -29,8 +29,6 @@ export default function Home() {
     register,
     handleSubmit,
     formState: { errors },
-    setValue,
-    watch,
   } = useForm<WorkoutFormData>({
     resolver: zodResolver(workoutSchema),
     defaultValues: {
